@@ -1,0 +1,79 @@
+@import 'bootstrap.min.css';
+
+.navbar {
+  margin: 0;
+}
+
+  .navbar-default {
+    background-color: #a60000;
+    border: none;
+    border-radius: 0;
+  }
+
+    .navbar-default button {
+      border-color: #960000 !important;
+    }
+
+      .navbar-default button:hover, .navbar-default button:focus {
+        background-color: #960000 !important;
+      }
+
+    .navbar-default a, .navbar-default a .caret {
+      color: #eee !important;
+      border-top-color: #eee !important;
+      border-bottom-color: #eee !important;
+    }
+
+    .navbar-default a:hover, .navbar-default .dropdown.open a.dropdown-toggle {
+      background-color: #960000 !important;
+    }
+
+    .navbar-default .dropdown-menu a:hover, .navbar-default .dropdown-menu .active a {
+      color: #eee !important;
+      background-color: #a60000 !important;
+    }
+
+    .navbar-default .dropdown-menu {
+      background-color: #960000;
+      border: none;
+    }
+
+  .navbar-collapse {
+    border-color: #960000 !important;
+  }
+
+    .navbar-collapse.collapse {
+      padding: 0;
+    }
+
+    .navbar-collapse .nav {
+      margin-left: -15px;
+    }
+
+
+
+.jumbotron h1 {
+  font-weight: 700;
+}
+
+
+
+.page-header {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+  .page-header h1 {
+    margin-top: 0;
+    color: #a60000;
+  }
+
+
+
+a {
+  color: #a60000;
+}
+
+.list-group-item .glyphicon {
+  margin-right: 10px;
+}
