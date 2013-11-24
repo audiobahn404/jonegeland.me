@@ -10,7 +10,6 @@ body {
   font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
   padding: 0;
   margin: 0;
-  margin-bottom: 20px;
 }
 
 .container {
@@ -24,7 +23,7 @@ body {
   margin-right: -15px;
 }
 
-  .row:after {
+  .row:after, .container:after {
     content: "";
     display: table;
     clear: both;
@@ -87,6 +86,16 @@ a {
   text-align: center;
 }
 
+.right {
+  float: right;
+}
+
+.note {
+  color: #777;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
 
 
 /* Components */
@@ -98,7 +107,7 @@ header {
 
   header .header-content {
     margin-bottom: 60px;
-    text-shadow: 1px 1px 2px rgba(0,0,0,.9);
+    text-shadow: 1px 1px 4px rgba(0,0,0,.8);
   }
 
   header .header-content h1 {
@@ -115,23 +124,39 @@ header {
 
   header .btn-group {
     position: absolute;
-    bottom: 8;
+    bottom: 7;
   }
 
     header .btn-group>.btn {
       padding: 8px 10px 10px 10px;
       margin-bottom: 10px;
       margin-right: 5px;
-      font-weight: 500;
       border-radius: 4px;
       border: 1px solid rgba(255,255,255,.5);
       color: #fff;
+      font-weight: 500;
+      word-wrap: none;
+      text-shadow: 1px 1px 2px rgba(0,0,0,.8);
     }
 
       header .btn-group>.btn:hover, header .btn-group>.btn.active {
         background-color: #fff;
         color: #a25;
+        text-shadow: none;
       }
+
+
+footer {
+  background-color: #eee;
+}
+
+  footer p {
+    font-size: 14px;
+    margin: 0;
+    padding: 4px 0 2px;
+    line-height: 14px;
+    color: #777;
+  }
 
 
 .page-header {
@@ -148,6 +173,7 @@ table {
   width: 100%;
   table-layout: fixed;
   text-align: center;
+  border-collapse: collapse;
 }
 
   table caption {
@@ -156,12 +182,28 @@ table {
     margin-bottom: 10px;
   }
 
+    table caption.bottom {
+      caption-side: bottom;
+    }
+
   table th {
     color: #a25;
+    text-align: right;
+  }
+
+  table thead th {
+    padding: 10px 0px;
+    background-color: #fff;
+    text-align: center;
+  }
+
+  table tr:nth-child(odd) {
+    background-color: #eee;
   }
 
 table.big td {
   padding: 25px;
+  margin: 0;
 }
 
 
@@ -171,6 +213,12 @@ table.big td {
     list-style-type: none;
     margin-bottom: 5px;
   }
+
+    .panel li .time {
+      color: #777;
+      float: right;
+      font-size: 14px;
+    }
 
   .panel p {
     line-height: 1.5em;
