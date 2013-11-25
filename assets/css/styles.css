@@ -93,7 +93,7 @@ a {
 .note {
   color: #777;
   font-size: 14px;
-  margin: 5px 0;
+  margin: 10px 0 5px 0;
 }
 
 
@@ -198,7 +198,7 @@ table {
   }
 
   table tr:nth-child(odd) {
-    background-color: #eee;
+    background-color: #f7f7f7;
   }
 
 table.big td {
