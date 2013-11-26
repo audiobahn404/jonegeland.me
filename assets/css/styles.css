@@ -89,6 +89,7 @@ a {
 
 .right {
   float: right;
+  z-index: 10;
 }
 
 .note {
@@ -123,10 +124,17 @@ header {
     line-height: 1.2em;
   }
 
-  header .btn-group {
+  header .btn-row {
     position: absolute;
     bottom: 7;
+    width: inherit;
+    padding-right: 15px;
   }
+
+    header .btn-group {
+      position: relative;
+      width: auto;
+    }
 
     header .btn-group>.btn {
       padding: 8px 10px 10px 10px;
