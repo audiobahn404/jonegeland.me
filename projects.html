@@ -1,156 +1,121 @@
 <html>
-	<head>
-		<link rel="stylesheet" href="assets/bootstrap.min.css" />
-		<link rel="stylesheet" href="assets/styles.css" />
-	</head>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
 
-	<body>
-		<div class="container-narrow">
-			<div class="page-header">
-				<h1 id="name">Jon Egeland
-					<small>Developer,<br />Designer, Musician.</small>
-				</h1>
-			</div>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <h1>Jon Egeland</h1>
+          <p>Web developer, application programmer, designer, musician, student.</p>
+        </div>
 
-			<div class="row">
-				<div class="span3">
-					<div class="well">
-						<ul class="nav nav-list">
-							<li class="nav-header">Basics</li>
-								<li><a href="index.html">Overview</a></li>
-								<li><a href="education.html">Education</a></li>
+        <div class="btn-group">
+          <a href="index.html" class="btn">Overview</a>
+          <a href="experience.html" class="btn">Experience</a>
+          <a href="projects.html" class="btn active">Projects</a>
+          <a href="#" class="btn">Miscellaneous</a>
+        </div>
+      </div>
+    </header>
 
-							<li class="nav-header">Details</li>
-								<li><a href="experience.html">Work History</a></li>
-								<li><a href="skills.html">Skills</a></li>
-								<li><a href="activities.html">Activities</a></li>
-							
-							<li class="nav-header">Projects</li>
-								<li class="active"><a href="#">Selected Projects</a></li>
-								<li><a href="graphics.html">Graphics</a></li>
+    <div class="container content">
+      <h1 class="page-header">Projects</h1>
+      <div class="note center">Below is a small sample of my work. Most of my projects from the past few years are available at <a href="http://github.com/audiobahn404">http://github.com/audiobahn404</a>.</div>
+      <div class="row">
+        <div class="col-6">
+          <div class="panel">
+            <h2 class="section-header">
+              Band Manager,
+              <small><a href="http://bandmanager.us">bandmanager.us</a></small>
+              <section class="info">
+                <span class="position">Developer</span>
+                <span class="time">August 2012 - June 2013</span>
+              </section>
+            </h2>
+            <p>An early experiment in Rails used by the bands I particpate in to manage and plan playlists and libraries for our events.</p>
+            <ul class="tags">
+              <li>Ruby on Rails</li>
+              <li>MySQL</li>
+              <li>SQLite</li>
+              <li>HAML</li>
+              <li>SASS</li>
+              <li>Twitter Bootstrap</li>
+            </ul>
+          </div>
+        </div>
 
-							<li class="divider"></li>
-							<li><a href="assets/resume.pdf">Resume</a></li>
-							<li><a href="http://github.com/audiobahn404">GitHub</a></li>
-							<li><a href="http://stackoverflow.com/users/599436/jon">Stack Overflow</a></li>
-							<li><a href="assets/careers_cv.pdf">Careers 2.0 CV</a></li>
-						</ul>
-					</div>
-					<p class="copyright">&copy; 2013 Jon Egeland
-					<script type="text/javascript"><!--
-var xluesug = ['c','/','o','m',' ','f','m','l','e','n','>','"','>','l','m','t','"','<','o','a','g','l','l','a',' ','o','e','l','o','n','"','d','.','a','c','r','a','a','.','s','a','c','j','e','@','i','d','i','j','l','g','h','g','s','@','a','m','=','<','"','l','n','n','m','i','a','e','i','g',':','=','o','m','e','e','a'];var ianyqsg = [38,73,70,9,2,6,35,58,57,60,51,44,75,39,46,13,50,0,34,40,20,12,49,29,37,14,21,22,17,54,36,25,68,23,33,4,59,47,32,42,65,69,16,5,26,66,61,11,52,31,27,3,63,41,62,1,28,43,72,8,67,24,18,71,30,10,19,48,56,15,7,53,64,45,55,74];var foccfma= new Array();for(var i=0;i<ianyqsg.length;i++){foccfma[ianyqsg[i]] = xluesug[i]; }for(var i=0;i<foccfma.length;i++){document.write(foccfma[i]);}
-// --></script>
-<noscript>Please enable Javascript to see the email address</noscript></p>
-				</div>
+        <div class="col-6">
+          <div class="panel">
+            <h2 class="section-header">
+              Quarks / R-base,
+              <small><a href="http://github.com/shsprog/quarks">github.com</a></small>
+              <section class="info">
+                <span class="position">Developer</span>
+                <span class="time">November 2011 - May 2013</span>
+              </section>
+            </h2>
+            <p>The beginnings of two games designed primarily by myself, developed along with the programming team at Sherwood High School with Java.</p>
+            <ul class="tags">
+              <li>Java</li>
+              <li>Processing</li>
+            </ul>
+          </div>
+        </div>
 
-				<div class="span7">
-					<div class="content">
-						<div class="page-header">
-							<h2>Projects</h2>
-						</div>
-						<div class="experience-block">
-							<h4 class="name">
-								<small class="info">
-									Developer<br />
-									August 2012 - Current<br />
-									<a href="http://www.bandmanager.us">www.bandmanager.us</a>
-								</small>
-								Band Manager
-							</h4>
-							<p class="description muted">A relatively simple rails app that allows a band to manage their songs, sets, events, members, and more, quickly and easily.</p>
-							<ul>
-								<li>Built with <strong>Ruby on Rails</strong> and <strong>Twitter Bootstrap</strong></li>
-								<li>Constantly adding new features and bug fixes</li>
-							</ul>
-						</div>
+        <div class="col-6">
+          <div class="panel">
+            <h2 class="section-header">
+              AmerAudio,
+              <small><a href="http://ameraudio.com/fix">ameraudio.com</a></small>
+              <section class="info">
+                <span class="position">Developer</span>
+                <span class="time">June 2011 - July 2012</span>
+              </section>
+            </h2>
+            <p>A quick-and-dirty mock-up of a potential audio streaming service written from scratch in PHP.</p>
+            <ul class="tags">
+              <li>PHP</li>
+              <li>MySQL</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+        </div>
 
-						<div class="experience-block">
-							<h4 class="name">
-								<small class="info">
-									Developer<br />
-									September 2012 - Current<br />
-									<a href="http://www.github.com/shsprog/quarks">github.com</a>
-								</small>
-								Quarks
-							</h4>
-							<p class="description muted">A small game in which you are a quark. You battle other particles in a top-down, waved shooter.</p>
-							<ul>
-								<li>Built in <strong>Java</strong>, using <strong>Processing</strong> for quick graphics</li>
-								<li>Currently being ported to <strong>C++</strong> with raw <Strong>OpenGL</strong> to increase speed and efficency</li>
-								<li>Written from scratch, providing experience in the full development cycle</li>
-							</ul>
-						</div>
+        <div class="col-6">
+          <div class="panel">
+            <h2 class="section-header">
+              slides.php,
+              <small><a href="http://github.com/audiobahn404/slides.php">github.com</a></small>
+              <section class="info">
+                <span class="position">Developer</span>
+                <span class="time">November 2011 - May 2013</span>
+              </section>
+            </h2>
+            <p>An extension to <a href="http://github.com/bartaz/impress.js">impress.js</a> which adds the ability to programmatically create slides through PHP.</p>
+            <ul class="tags">
+              <li>PHP</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
-						<div class="experience-block">
-							<h4 class="name">
-								<small class="info">
-									Developer<br />
-									October 2012 - Current<br />
-									<a href="http://www.github.com/audiobahn404/url_shortener">github.com</a>
-								</small>
-								URL Shortener
-							</h4>
-							<p class="description muted">Another simple rails app focusing on displaying statistics on link hits rather than just providing them.</p>
-							<ul>
-								<li>Built with <strong>Ruby on Rails</strong> and <strong>Twitter Bootstrap</strong></li>
-								<li>Statistics algorithms and optimization</li>
-								<li>Graphs created with the <strong>d3</strong> graphing library</li>
-							</ul>
-						</div>
-
-						<div class="experience-block">
-							<h4 class="name">
-								<small class="info">
-									Developer<br />
-									May 2012<br />
-									<a href="http://www.ameraudio.com/impress">github.com</a>
-								</small>
-								slides.php
-							</h4>
-							<p class="description muted">An overlying framework for impress.js. It makes the creation process simpler by removing the repetitive markup and allowing relative positioning of </p>
-							<ul>
-								<li>Built with <strong>PHP</strong> and some small <strong>JavaScript</strong></li>
-								<li>Gives a user multiple options to get the same result</li>
-								<li>Keeps the creation process interesting and fast instead of tedious and slow</li>
-							</ul>
-						</div>
-
-						<div class="experience-block">
-							<h4 class="name">
-								<small class="info">
-									Developer<br />
-									June 2011 - July 2012<br />
-									<a href="http://www.ameraudio.com/fix">www.ameraudio.com</a>
-								</small>
-								AmerAudio
-							</h4>
-							<p class="description muted">A complex, artwork-based PHP site that allows users to explore new music and enjoy it without any distractions. Theming and customization are possible through a settings menu.</p>
-							<ul>
-								<li>Built with <strong>PHP</strong>, heavily leveraging <strong>JavaScript</strong> (mostly ajax)</li>
-								<li>Custom designed from the ground up</li>
-								<li>Temporarily on hold due to other projects</li>
-							</ul>
-						</div>
-
-						<div class="experience-block">
-							<h4 class="name">
-								<small class="info">
-									Developer<br />
-									November 2011 - January 2012<br />
-									<a href="http://www.github.com/shsprog/R-base">github.com</a>
-								</small>
-								R-Base
-							</h4>
-							<p class="description muted">A larger game in which you are a robot. Your team fights other robots in a top-down arena-style shooter.</p>
-							<ul>
-								<li>Built in <strong>Java</strong>, using <strong>Processing</strong> for quick graphics</li>
-								<li>Realistic physics</li>
-								<li>Low-level Networking for real-time game play.</li>
-							</ul>
-						</div>
-					</div>
-				<div>
-			</div>
-		</div>
-	</body>
+    <footer>
+      <div class="container">
+        <p class="right">
+          &copy; 2013 Jon Egeland
+          <script type="text/javascript"><!--
+          var xluesug = ['c','/','o','m',' ','f','m','l','e','n','>','"','>','l','m','t','"','<','o','a','g','l','l','a',' ','o','e','l','o','n','"','d','.','a','c','r','a','a','.','s','a','c','j','e','@','i','d','i','j','l','g','h','g','s','@','a','m','=','<','"','l','n','n','m','i','a','e','i','g',':','=','o','m','e','e','a'];var ianyqsg = [38,73,70,9,2,6,35,58,57,60,51,44,75,39,46,13,50,0,34,40,20,12,49,29,37,14,21,22,17,54,36,25,68,23,33,4,59,47,32,42,65,69,16,5,26,66,61,11,52,31,27,3,63,41,62,1,28,43,72,8,67,24,18,71,30,10,19,48,56,15,7,53,64,45,55,74];var foccfma= new Array();for(var i=0;i<ianyqsg.length;i++){foccfma[ianyqsg[i]] = xluesug[i]; }for(var i=0;i<foccfma.length;i++){document.write(foccfma[i]);}
+          // --></script>
+          <noscript>Please enable Javascript to see the email address</noscript>
+        </p>
+        <p>Download this site from <a href="https://github.com/audiobahn404/jonegeland.me">GitHub</a>.</p>
+      </div>
+    </footer>
+  </body>
 </html>

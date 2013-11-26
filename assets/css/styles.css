@@ -207,7 +207,9 @@ table.big td {
 }
 
 
-.panel { }
+.panel {
+  margin-bottom: 20px;
+}
 
   .panel li {
     list-style-type: none;
@@ -222,6 +224,7 @@ table.big td {
 
   .panel p {
     line-height: 1.5em;
+    margin-bottom: 0px;
   }
 
 
@@ -235,6 +238,32 @@ table.big td {
     font-weight: normal;
   }
 
+    .section-header section span:after {
+      content: ",";
+      margin-right: 2px;
+    }
+
+    .section-header section span:last-child:after {
+      content: "";
+    }
+
   .section-header section .position {
     font-weight: bold;
+  }
+
+ul.tags {
+  margin: 0;
+  padding: 0;
+}
+
+  ul.tags li {
+    margin: 0 2px 0 0;
+    padding: 2px 4px;
+    border: 1px solid #eee;
+    color: #aaa;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 2.2em;
+    text-transform: uppercase;
+    display: inline;
   }
