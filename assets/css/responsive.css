@@ -8,15 +8,40 @@
     width: 100%;
   }
 
-  .row {
-    margin: 0;
+  .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+    width: 100%;
   }
 
   div[class*="col-"] {
-    width: 100%;
-    padding: 0;
+    padding-left: 15px;
   }
 
+
+  /* Footers */
+  footer {
+    width: 100%;
+  }
+
+    footer p {
+      float: none !important;
+      display: block;
+    }
+}
+
+
+
+@media(max-width: 786px) {
+  .mobile-clear {
+    clear: both;
+  }
+
+  .col-6 {
+    width: 100%;
+  }
+
+  .col-1, .col-2, .col-3, .col-4, .col-5 {
+    width: 50%;
+  }
 
   /* Headers */
   header .header-content {
@@ -51,7 +76,6 @@
 
     header .btn-group {
       display: inline;
-      float: none;
     }
 
     header .btn-row>.btn-group>.btn {
@@ -75,15 +99,53 @@
       header .btn-row>.btn-group>.btn.active {
         color: #a25;
       }
+}
 
 
-  /* Footers */
-  footer {
+
+@media(max-width: 680px) {
+  div[class*="col-"] {
+    width: 100%;
+  }
+}
+
+@media(max-width: 480px) {
+    /* Tables */
+  table, thead, tbody, tr, th, td {
+    display: block;
+  }
+
+  table {
+    margin-bottom: 20px;
+  }
+
+  table thead th {
+    display: none;
+  }
+
+  table tr {
+    margin: 0 -15px;
+    padding-bottom: 10px;
+  }
+
+  table tbody th {
+    padding: 15px 15px 5px 15px;
+    text-align: left;
     width: 100%;
   }
 
-    footer p {
-      float: none !important;
-      display: block;
+  table td {
+    position: relative;
+    padding: 5px 0 5px 40%;
+    text-align: left;
+  }
+
+    table td:before {
+      position: absolute;
+      left: 0;
+      width: 30%;
+      font-weight: 500;
+      text-align: right;
+      content: attr(data-title);
     }
 }

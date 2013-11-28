@@ -101,7 +101,7 @@ a {
 .note {
   color: #777;
   font-size: 14px;
-  margin: 10px 0 5px 0;
+  margin: 10px 0 10px 0;
 }
 
 
@@ -227,7 +227,7 @@ table {
     background-color: #f7f7f7;
   }
 
-table.big td {
+table td {
   padding: 25px;
   margin: 0;
 }
