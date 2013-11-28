@@ -68,6 +68,10 @@
         color: #333;
       }
 
+      header .btn-row>.btn-group>.btn:hover, header .btn-row>.btn-group>.btn a:hover {
+        color: #a25;
+      }
+
       header .btn-row>.btn-group>.btn.active {
         color: #a25;
       }
