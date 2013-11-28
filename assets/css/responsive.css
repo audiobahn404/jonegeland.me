@@ -103,14 +103,18 @@
 
 
 
-@media(max-width: 680px) {
+@media(max-width: 560px) {
   div[class*="col-"] {
     width: 100%;
+  }
+
+  .btn-group {
+    float: none;
   }
 }
 
 @media(max-width: 480px) {
-    /* Tables */
+  /* Tables */
   table, thead, tbody, tr, th, td {
     display: block;
   }
@@ -119,7 +123,7 @@
     margin-bottom: 20px;
   }
 
-  table thead th {
+  table thead {
     display: none;
   }
 
@@ -129,7 +133,7 @@
   }
 
   table tbody th {
-    padding: 15px 15px 5px 15px;
+    padding: 10px 15px 5px 15px;
     text-align: left;
     width: 100%;
   }
@@ -143,9 +147,12 @@
     table td:before {
       position: absolute;
       left: 0;
+      padding-top: 4px;
       width: 30%;
-      font-weight: 500;
+      font-weight: 700;
+      font-size: 12px;
       text-align: right;
+      text-transform: uppercase;
       content: attr(data-title);
     }
 }

@@ -133,7 +133,7 @@ header {
 
   header .btn-row {
     position: absolute;
-    bottom: 7;
+    bottom: 8px;
     width: inherit;
     padding-right: 15px;
   }
