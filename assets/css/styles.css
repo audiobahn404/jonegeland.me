@@ -149,7 +149,12 @@ header {
       text-shadow: 1px 1px 2px rgba(0,0,0,.8);
     }
 
-      header .btn-group>.btn:hover, header .btn-group>.btn.active {
+      header .btn-group>.btn a {
+        color: #fff;
+        margin: 0px 2px;
+      }
+
+      header .btn-group>.btn:hover, header .btn-group>.btn.active, header .btn-group>.btn:hover a, header .btn-group>.btn.active a  {
         background-color: #fff;
         color: #a25;
         text-shadow: none;
@@ -280,3 +285,11 @@ ul.tags {
     text-transform: uppercase;
     display: inline;
   }
+
+
+
+/* Font Awesome Overrides */
+.fa {
+  font-weight: 500;
+  padding: 0 2px;
+}
